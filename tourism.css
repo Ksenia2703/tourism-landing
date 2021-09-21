@@ -1,0 +1,103 @@
+@import 'maket-0.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto'; */
+
+
+.parent-top {
+    position: relative;
+    
+}
+
+.bacground-top {
+    background-size: cover; 
+    /* position: absolute; */
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.parent-center {
+    position: absolute;
+    top: 40%;
+}
+
+.bacground-center {
+    background-size: cover; 
+    max-width: 100%;
+    /* min-width: 100%; */
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.parent-bottom {
+    position: absolute;
+    top: 60%;
+}
+
+.bacground-bottom {
+    background-size: cover; 
+    max-width: 100%;
+    z-index: 3;
+    top: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.navigation-section {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 3;
+    justify-content: space-between;
+}
+
+.logo {
+    top: 70px;
+    left: 70px;
+}
+
+.equipment-container {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    padding: 10px 25px;
+}
+
+.about-us-container {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    padding: 10px 25px;
+}
+
+.blog-container {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    padding: 10px 25px;
+}
+
+.menu-block {
+    display: flex;
+}
+
+.contacts-block {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
