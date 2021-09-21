@@ -6,15 +6,14 @@
 
 .parent-top {
     position: relative;
-    
 }
 
 .bacground-top {
     background-size: cover; 
-    /* position: absolute; */
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+    filter: brightness(80%);
 }
 
 .parent-center {
@@ -25,7 +24,6 @@
 .bacground-center {
     background-size: cover; 
     max-width: 100%;
-    /* min-width: 100%; */
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
@@ -58,6 +56,7 @@
 .logo {
     top: 70px;
     left: 70px;
+    padding-left: 60px;
 }
 
 .equipment-container {
@@ -67,6 +66,12 @@
     color: white;
     padding: 10px 25px;
 }
+.equipment-container:hover {
+    cursor: pointer;
+    color: #fbd784;
+    -webkit-transform: translateY(-3px);
+    transition: all 200ms ease;
+}
 
 .about-us-container {
     font-size: 20px;
@@ -74,6 +79,12 @@
     font-weight: 500;
     color: white;
     padding: 10px 25px;
+}
+.about-us-container:hover {
+    cursor: pointer;
+    color: #fbd784;
+    -webkit-transform: translateY(-3px);
+    transition: all 200ms ease;
 }
 
 .blog-container {
@@ -83,13 +94,42 @@
     color: white;
     padding: 10px 25px;
 }
+.blog-container:hover {
+    cursor: pointer;
+    color: #fbd784;
+    -webkit-transform: translateY(-3px);
+    transition: all 200ms ease;
+}
+
 
 .menu-block {
     display: flex;
 }
 
-.contacts-block {
+.user-block {
     display: flex;
+    padding-right: 60px;
+    align-items: flex-end;
+}
+
+.user {
+    width: 24px;
+    height: 24px;
+}
+.user:hover {
+    cursor: pointer;
+}
+
+.account {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.account:hover {
+    cursor: pointer;
 }
 
 
