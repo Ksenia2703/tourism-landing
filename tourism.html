@@ -6,13 +6,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <title>
         tourism
     </title>
 </head>
 <body>
     <div class="project">
-        <!-- <div class="bacground-section"> -->
             <div class="parent-top">
                 <div class="navigation-section">
                     <img class="logo" src="img/Logo.svg" alt="">
@@ -26,6 +26,31 @@
                         <div class="account">Account</div>
                     </div>
                 </div>
+                <section class="page-title">
+                    <div class="travel-guide-section scroller">
+                        <div class="tagline-line-section">
+                            <div class="tagline-line-center">
+                                <div class="tagline-line"></div>
+                            </div>
+                            <div class="travel-guide-title">
+                                A HIKING GUIDE 
+                            </div>
+                        </div>
+
+                        <div class="be-prepared">
+                            Be prepared for the Mountains and beyond!
+                        </div>
+
+                        <div class="scroll-down-section">
+                            <div class="scroll-down nav-item-1">scroll down</div>
+                            <div class="scroll-arrow nav-item-1">
+                                <img class="scroll-img" src="https://img.icons8.com/material-sharp/24/ffffff/chevron-down.png" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
                 <img class="bacground-top" id="simpleParallaxTop" src="img/top.png" alt="">
             </div>
 
@@ -35,13 +60,103 @@
 
             <div class="parent-bottom">
                 <img class="bacground-bottom" id="simpleParallaxBottom" src="img/bottom.png" alt="">
+                <div class="wrapper">
+                    <div class="content-wrapper">
+                        <div class="wrapper-text">
+                            <div class="count">
+                                01
+                            </div>
+                            <div class="tagline-wrapper">
+                                <div class="tagline-line-wrapper">
+                                    <div class="started-line"></div>
+                                </div>
+                                <div class="get-started-title">
+                                    GET STARTED
+                                </div>
+                            </div>
+                            <div class="level-title">
+                                What level of hiker are you?
+                            </div>
+                            <div class="get-started-text reviews">
+                                Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide
+                                will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker.
+                                What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+                            </div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="img/01.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>  
-        <!-- </div> -->
+
 
     </div>
+                <div class="equipment-section">
+                    <div class="wrapper02">
+                        <div class="content-wrapper02">
+                            <div class="wrapper-text02">
+                                <div class="count02">
+                                    02
+                                </div>
+                                <div class="tagline-wrapper02">
+                                    <div class="tagline-line-wrapper02">
+                                        <div class="started-line02"></div>
+                                    </div>
+                                    <div class="get-started-title">
+                                        GET STARTED
+                                    </div>
+                                </div>
+                                <div class="level-title">
+                                    What level of hiker are you?
+                                </div>
+                                <div class="get-started-text reviews">
+                                    Determining what level of hiker you are can be an important tool when planning future hikes. This
+                                    hiking
+                                    level guide
+                                    will help you plan hikes according to different hike ratings set by various websites like All Trails
+                                    and
+                                    Modern Hiker.
+                                    What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+                                </div>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="img/01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
     
     <script src="https://unpkg.com/simple-parallax-js"></script>
     <script src="js/tourism.js"></script>
+    
+    <script>
+        $(window).scroll( function() {
+
+	var scroll = $(window).scrollTop();
+    var speed = 0.6;
+    
+            $('.scroller').each(function(){
+                var $this = $(this);
+                var $parent = $this.parent().css("background", "red");
+                var topOffset = $parent.offset().top;
+                var height = $parent.outerHeight(true);
+                var parallaxSize = (scroll - topOffset) * speed;
+                // prevent parallax when scroll down
+                // if(scroll > topOffset + height) {
+                //     return;
+                // }
+                $this.css({ 
+                    'transform': scroll >= topOffset ? ('translateY(' + parallaxSize + 'px)' ) : ''
+                });
+            }); 
+        }); 
+
+
+        $('.nav-item-1').on('click', function () {
+                $('html,body').animate({ scrollTop: $('.reviews').offset().top + "px" }, { duration: 1E3 });
+            });
+    </script>
 
 </body>
 
