@@ -109,7 +109,6 @@ body {
     transition: all 200ms ease;
 }
 
-
 .menu-block {
     display: flex;
 }
@@ -140,13 +139,11 @@ body {
     cursor: pointer;
 }
 
-
 .travel-guide-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    /* position: fixed; */
     z-index: 2;
     top: 260px;
     justify-content: center;
@@ -211,35 +208,43 @@ body {
     cursor: pointer;
 }
 
-/* ///////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
 
-.wrapper {
-    display: flex;
+.equipment-section01 {
+    height: 1000px;
     width: 100%;
-    position: absolute;
-    top: 700px;
-    justify-content: center;
+    background-color: #0b1d26;
+    /* position: relative; */
 }
 
-.content-wrapper {
+.wrapper01 {
+    display: flex;
+    width: 100%;
+    top: 700px;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.content-wrapper01 {
     display: flex;
     width: 86%;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 150px;
 }
 
-.wrapper-text {
+.wrapper-text01 {
     width: 44%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: #8a8a67; */
+    position: relative;
 }
 
-.count {
+.count01 {
     position: absolute;
-    left: 20px;
-    z-index: 0;
+    left: -70px;
+    z-index: 40;
     opacity: 0.2;
     font-size: 200px;
     font-weight: 700;
@@ -247,30 +252,23 @@ body {
     color: white;
 }
 
-.tagline-wrapper {
+.tagline-wrapper01 {
     display: flex;
     flex-direction: row;
-    /* width: 40%; */
 }
 
-.tagline-line-wrapper {
+.tagline-line-wrapper01 {
     display: flex;
     align-items: center;
 }
 
-.tagline-line-block {
+.started-line01 {
     width: 80px;
     color: transparent;
     border-top: 2px solid #fbd784;
 }
 
-.started-line {
-    width: 80px;
-    color: transparent;
-    border-top: 2px solid #fbd784;
-}
-
-.get-started-title {
+.get-started-title01 {
     font-size: 20px;
     color: #fbd784;
     padding: 0px 0px 5px 30px;
@@ -278,7 +276,7 @@ body {
     font-weight: 600;
 }
 
-.level-title {
+.level-title01 {
     font-size: 45px;
     letter-spacing: 2px;
     font-weight: 600;
@@ -287,31 +285,35 @@ body {
     padding: 20px 0px;
     width: 100%;
 }
-.level-title::selection {
+.level-title01::selection {
     color: #FBD784;
 }
 
-.get-started-text {
+.get-started-text01 {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 32px;
-    /* font-weight: 600; */
     color: white;
     width: 750px;
     padding: 25px 0px;
     width: 100%;
 }
-.get-started-text::selection {
+.get-started-text01::selection {
     color: #FBD784;
 }
 
+.content-section01 {
+    position: relative;
+    z-index: 999999999;
+}
 
+/* ////////////////////////////////////////////////////////////////// */
 
-/* ///////////////////////////////////////////////////////////////////// */
-.equipment-section {
+.equipment-section02 {
     height: 1000px;
     width: 100%;
-    background-color: red;
+    background-color: #0b1d26;
+    position: relative;
 }
 
 .wrapper02 {
@@ -321,52 +323,19 @@ body {
     justify-content: center;
 }
 
-.content-wrapper02 {
-    display: flex;
-    width: 86%;
-    flex-direction: row;
-    justify-content: space-between;
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.equipment-section03 {
+    height: 1000px;
+    width: 100%;
+    background-color: #0b1d26;
+    position: relative;
 }
 
-.wrapper-text02 {
-    width: 44%;
+.wrapper03 {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    top: 700px;
     justify-content: center;
 }
-
-.count02 {
-    /* position: absolute; */
-    left: 20px;
-    z-index: 0;
-    opacity: 0.2;
-    font-size: 200px;
-    font-weight: 700;
-    top: 30px;
-    color: white;
-}
-
-.tagline-wrapper02 {
-    display: flex;
-    flex-direction: row;
-}
-
-.tagline-line-wrapper02 {
-    display: flex;
-    align-items: center;
-}
-
-.started-line02 {
-    width: 80px;
-    color: transparent;
-    border-top: 2px solid #fbd784;
-}
-
-
-
-
-
-
-
-
-
