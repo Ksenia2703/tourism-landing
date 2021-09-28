@@ -1103,3 +1103,19 @@ body {
   visibility: visible;
   left: 0;
 }
+
+/* скролл */
+
+body::-webkit-scrollbar {
+  width: 12px;              
+}
+
+body::-webkit-scrollbar-track {
+  background: #788480;      
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0b1d25;    
+  border-radius: 100px;    
+  border: 6px solid rgba(0,0,0,0.2);
+}
