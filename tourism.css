@@ -12,6 +12,7 @@ body {
 }
 .parent-top {
     position: relative;
+    
 }
 
 .bacground-top {
@@ -570,6 +571,7 @@ body {
     font-weight: 700;
     top: 30px;
     color: white;
+    font-family: 'Roboto';
 }
 @media (max-width: 1380px) {
   .count01 {
@@ -1149,4 +1151,16 @@ body::-webkit-scrollbar-thumb {
   height: 50px;
   justify-content: center;
   
+}
+
+.active1 div {
+	display: none;   
+}
+
+.active2 div {
+	display: none;   
+}
+
+.active3 div {
+	display: none;   
 }

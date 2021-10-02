@@ -16,14 +16,14 @@
 
 
 
-<div class="preloader">
-    <div class="preloader__row">
+<!-- <div class="preloader">
+    <div class="preloader__row"> -->
         <!-- MNTN -->
-        <img class="img-preloader" src="img/Logo.svg" alt="">
+        <!-- <img class="img-preloader" src="img/Logo.svg" alt="">
         <div class="preloader__item"></div>
         <div class="preloader__item"></div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -101,7 +101,7 @@
         <div class="equipment-section01">
             <div class="wrapper01">
                 <div class="content-wrapper01 img-first">
-                    <div class="wrapper-text01">
+                    <div class="wrapper-text01 active1">
                         <div class="count01">
                             01
                         </div>
@@ -139,7 +139,7 @@
                     <div class="img-wrapper01">
                         <img class="img-content" src="img/02.png" alt="">
                     </div>
-                    <div class="wrapper-text01">
+                    <div class="wrapper-text01 active2">
                         <div class="count01">
                             02
                         </div>
@@ -168,7 +168,7 @@
         <div class="equipment-section03">
             <div class="wrapper03">
                 <div class="content-wrapper01 img-first">
-                    <div class="wrapper-text01">
+                    <div class="wrapper-text01 active3">
                         <div class="count01">
                             03
                         </div>
@@ -274,11 +274,149 @@
 
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     function GoToLink() {
         setTimeout('document.location.replace("https://dev-ksu.ru/tourism-landing/")', 3000)
     }
     GoToLink();
+</script> -->
+
+
+<!-- выезд блока при скролле -->
+<script>
+    var block_show1 = false;
+
+        function scrollTracking1() {
+            if (block_show1) {
+                return false;
+            }
+
+            var wt = $(window).scrollTop()-400;
+            var wh = $(window).height();
+            var et = $('.active1').offset().top;
+            var eh = $('.active1').outerHeight();
+            var dh = $(document).height();
+
+            // console.log('wt', wt);
+            // console.log('wh', wh);
+            // console.log('et', et);
+            // console.log('eh', eh);
+            // console.log('dh', dh);
+
+            if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+                block_show1 = true;
+
+                // Код анимации
+                // $('.active div:eq(0)').show('fast', function () {
+                //     $(this).next().show('fast', arguments.callee);
+                //     console.log(3);
+                // });
+
+                $('.active1 div:eq(0)').fadeIn('1000', function () {
+                    $(this).next().fadeIn('1000', arguments.callee);
+                });
+            }
+        }
+
+        // $(window).scroll(function () {
+        //     scrollTracking1();
+        // });
+
+        // $(document).ready(function () {
+        //     scrollTracking1();
+        // });
+</script>
+
+<script>
+    var block_show2 = false;
+
+    function scrollTracking2() {
+        if (block_show2) {
+            return false;
+        }
+
+        var wt = $(window).scrollTop() - 400;
+        var wh = $(window).height();
+        var et = $('.active2').offset().top;
+        var eh = $('.active2').outerHeight();
+        var dh = $(document).height();
+
+        // console.log('wt', wt);
+        // console.log('wh', wh);
+        // console.log('et', et);
+        // console.log('eh', eh);
+        // console.log('dh', dh);
+
+        if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+            block_show2 = true;
+
+            // Код анимации
+            // $('.active div:eq(0)').show('fast', function () {
+            //     $(this).next().show('fast', arguments.callee);
+            //     console.log(3);
+            // });
+
+            $('.active2 div:eq(0)').fadeIn('1000', function () {
+                $(this).next().fadeIn('1000', arguments.callee);
+            });
+        }
+    }
+
+    // $(window).scroll(function () {
+    //     scrollTracking2();
+    // });
+
+    // $(document).ready(function () {
+    //     scrollTracking2();
+    // });
+</script>
+
+<script>
+    var block_show3 = false;
+
+    function scrollTracking3() {
+        if (block_show3) {
+            return false;
+        }
+
+        var wt = $(window).scrollTop() - 400;
+        var wh = $(window).height();
+        var et = $('.active3').offset().top;
+        var eh = $('.active3').outerHeight();
+        var dh = $(document).height();
+
+        // console.log('wt', wt);
+        // console.log('wh', wh);
+        // console.log('et', et);
+        // console.log('eh', eh);
+        // console.log('dh', dh);
+
+        if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+            block_show3 = true;
+
+            // Код анимации
+            // $('.active div:eq(0)').show('fast', function () {
+            //     $(this).next().show('fast', arguments.callee);
+            //     console.log(3);
+            // });
+
+            $('.active3 div:eq(0)').fadeIn('1000', function () {
+                $(this).next().fadeIn('1000', arguments.callee);
+            });
+        }
+    }
+
+    $(window).scroll(function () {
+        scrollTracking1();
+        scrollTracking2();
+        scrollTracking3();
+    });
+
+    $(document).ready(function () {
+        scrollTracking1();
+        scrollTracking2();
+        scrollTracking3();
+    });
 </script>
 
 </body>
