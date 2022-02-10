@@ -13,25 +13,6 @@
 </head>
 <body>
 
-
-
-
-<!-- <div class="preloader">
-    <div class="preloader__row"> -->
-        <!-- MNTN -->
-        <!-- <img class="img-preloader" src="img/Logo.svg" alt="">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-    </div>
-</div> -->
-
-
-
-
-
-
-
-
     <div class="project">
             <div class="parent-top">
                 <div class="navigation-section">
@@ -255,10 +236,6 @@
                 var topOffset = $parent.offset().top;
                 var height = $parent.outerHeight(true);
                 var parallaxSize = (scroll - topOffset) * speed;
-                // prevent parallax when scroll down
-                // if(scroll > topOffset + height) {
-                //     return;
-                // }
                 $this.css({ 
                     'transform': scroll >= topOffset ? ('translateY(' + parallaxSize + 'px)' ) : ''
                 });
@@ -270,17 +247,6 @@
                 $('html,body').animate({ scrollTop: $('.reviews').offset().top + "px" }, { duration: 1E3 });
             });
     </script>
-
-
-
-
-<!-- <script type="text/javascript">
-    function GoToLink() {
-        setTimeout('document.location.replace("https://dev-ksu.ru/tourism-landing/")', 3000)
-    }
-    GoToLink();
-</script> -->
-
 
 <!-- выезд блока при скролле -->
 <script>
@@ -297,34 +263,14 @@
             var eh = $('.active1').outerHeight();
             var dh = $(document).height();
 
-            // console.log('wt', wt);
-            // console.log('wh', wh);
-            // console.log('et', et);
-            // console.log('eh', eh);
-            // console.log('dh', dh);
-
             if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
                 block_show1 = true;
-
-                // Код анимации
-                // $('.active div:eq(0)').show('fast', function () {
-                //     $(this).next().show('fast', arguments.callee);
-                //     console.log(3);
-                // });
 
                 $('.active1 div:eq(0)').fadeIn('1000', function () {
                     $(this).next().fadeIn('1000', arguments.callee);
                 });
             }
         }
-
-        // $(window).scroll(function () {
-        //     scrollTracking1();
-        // });
-
-        // $(document).ready(function () {
-        //     scrollTracking1();
-        // });
 </script>
 
 <script>
@@ -341,34 +287,14 @@
         var eh = $('.active2').outerHeight();
         var dh = $(document).height();
 
-        // console.log('wt', wt);
-        // console.log('wh', wh);
-        // console.log('et', et);
-        // console.log('eh', eh);
-        // console.log('dh', dh);
-
         if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
             block_show2 = true;
-
-            // Код анимации
-            // $('.active div:eq(0)').show('fast', function () {
-            //     $(this).next().show('fast', arguments.callee);
-            //     console.log(3);
-            // });
 
             $('.active2 div:eq(0)').fadeIn('1000', function () {
                 $(this).next().fadeIn('1000', arguments.callee);
             });
         }
     }
-
-    // $(window).scroll(function () {
-    //     scrollTracking2();
-    // });
-
-    // $(document).ready(function () {
-    //     scrollTracking2();
-    // });
 </script>
 
 <script>
@@ -385,20 +311,8 @@
         var eh = $('.active3').outerHeight();
         var dh = $(document).height();
 
-        // console.log('wt', wt);
-        // console.log('wh', wh);
-        // console.log('et', et);
-        // console.log('eh', eh);
-        // console.log('dh', dh);
-
         if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
             block_show3 = true;
-
-            // Код анимации
-            // $('.active div:eq(0)').show('fast', function () {
-            //     $(this).next().show('fast', arguments.callee);
-            //     console.log(3);
-            // });
 
             $('.active3 div:eq(0)').fadeIn('1000', function () {
                 $(this).next().fadeIn('1000', arguments.callee);
